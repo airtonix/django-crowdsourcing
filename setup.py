@@ -24,4 +24,15 @@ setup(name='django-crowdsourcing',
       url='http://code.google.com/p/django-crowdsourcing/',
       packages=['crowdsourcing', 'crowdsourcing.templatetags'],
       license='MIT',
+      install_requires=[
+          "flickrapi",
+          "geopy",
+          "unicodecsv",
+          "django-positions",
+          "sorl-thumbnail==3.2.5",
+          "PIL>=1.1.6"
+          ],
+     dependency_links=[
+          "git+https://github.com/jpwatts/django-positions#egg=django-positions"
+         ]
      )
